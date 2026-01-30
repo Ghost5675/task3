@@ -1,7 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 3000
-
+const port = process.env.PORT || 3000;
 function isNatural(s) {
     return typeof s === "string" && /^[0-9]+$/.test(s) && Number(s) > 0;
 }
@@ -36,5 +35,5 @@ app.get('/rgaliev751_mail_ru/', (req, res) => {
 
 
 app.listen(port, () => {
-    console.log(`port: ${port}`)
+
 })

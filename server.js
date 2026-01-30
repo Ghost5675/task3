@@ -21,12 +21,6 @@ function lcm(a, b) {
     return a * b / gcd(a, b);
 }
 
-
-
-app.get('/', (req, res) => {
-    res.send('Hello World!')
-})
-
 app.get('/rgaliev751_mail_ru/', (req, res) => {
     const { x, y } = req.query
     if (!isNatural(x) || !isNatural(y)) {
@@ -42,5 +36,5 @@ app.get('/rgaliev751_mail_ru/', (req, res) => {
 
 
 app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
+    console.log(`port: ${port}`)
 })

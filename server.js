@@ -27,8 +27,8 @@ app.get('/rgaliev751_mail_ru/', (req, res) => {
         return;
     }
 
-    a = Number(x);
-    b = Number(y);
+    a = BigInt(x);
+    b = BigInt(y);
 
     res.type("text/plain").send(String(lcm(a, b)));
 })

@@ -27,7 +27,7 @@ app.get('/', (req, res) => {
     res.send('Hello World!')
 })
 
-app.get('/rgaliev751@mail_ru/', (req, res) => {
+app.get('/rgaliev751_mail_ru/', (req, res) => {
     const { x, y } = req.query
     if (!isNatural(x) || !isNatural(y)) {
         res.type("text/plain").send("NaN");
